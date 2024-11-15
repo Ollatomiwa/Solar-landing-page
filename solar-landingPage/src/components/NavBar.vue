@@ -26,16 +26,20 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Benefits</a>
         </li>
-        <li class="nav-item dropdown justify-content-end">
+        <div class="justify-content-end">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
           aria-expanded="false">
-            Dropdown link
+            More
           </a>
           <ul class="dropdown-menu ">
             <li><a class="dropdown-item" href="#">Contact Us</a></li>
             <li><a class="dropdown-item" href="#">Registration</a></li>
           </ul>
         </li>
+
+        </div>
+    
       </ul>
     </div>
   </div>

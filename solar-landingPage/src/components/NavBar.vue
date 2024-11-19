@@ -4,15 +4,15 @@
 
 <template>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Green Power</a>
+    <a class="navbar-brand" href="#">Solar Energy Powerr</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
         aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center my-8 mx-8" id="navbarNavDropdown">
+    <div class="collapse navbar-collapse justify-content-center my-8 mx-8 link-offset-2-hover"id="navbarNavDropdown">
       <ul class="nav ">
         <li class="nav-item">
           <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
@@ -20,11 +20,8 @@
         <li class="nav-item">
           <RouterLink class="nav-link" to="/about">About</RouterLink>
         </li>
-        <li class="nav-item">
+        <li class="nav-item ">
           <router-link class="nav-link" to="/service">Service</router-link>
-        </li>
-        <li class="nav-item">
-          <RouterLink class="nav-link" to="/benefits">Benefits</RouterLink>
         </li>
         <div class="justify-content-end">
         <li class="nav-item dropdown">

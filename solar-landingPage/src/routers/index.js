@@ -1,48 +1,48 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Homeview from "@/assets/views/Homeview.vue";
-import Aboutview from "@/assets/views/Aboutview.vue";
-import Serviceview from "@/views/Serviceview.vue";
-import Benefitsview from "@/assets/views/Benefitsview.vue";
-import contactusview from "@/assets/views/contactusview.vue";
-import Registrationviews from "@/assets/views/Registrationviews.vue";
+import { createRouter, createWebHashHistory } from "vue-router";
+import Home from "@/components/Home.vue";
+import ContactUs from "@/components/ContactUs.vue";
+import About from "@/components/About.vue";
+import Service from "@/components/Service.vue";
+import Benefits from "@/components/Benefits.vue";
+import Registration from "@/components/Registration.vue";
 
 const router = createRouter ({
-    history: createWebHistory (import.meta.env.BASE_URL),
+    history: createWebHashHistory (),
     routes: [
         {
-            path: './',
+            path: '/',
             name: 'home',
-            component:Homeview,
+            component:Home
         },
 
         {
-            path: './about',
+            path: '/about',
             name: 'about',
-            component:Aboutview,
+            component:About
         },
 
         {
-            path: './service',
-            name: 'service',
-            component:Serviceview,
+            path: '/service',
+            name: 'Service',
+            component:Service
         },
 
         {
-            path: './benefits',
+            path: '/benefits',
             name: 'benefits',
-            component:Benefitsview,
+            component:Benefits
         },
 
         {
-            path: './contact',
+            path: '/contact',
             name: 'contact',
-            component:contactusview,
+            component:ContactUs
         },
 
         {
-            path: './registration',
+            path: '/registration',
             name: 'registration',
-            component:Registrationviews,
+            component:Registration
         },
 
     ]

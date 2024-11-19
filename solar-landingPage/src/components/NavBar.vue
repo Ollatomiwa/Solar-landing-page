@@ -15,16 +15,16 @@
     <div class="collapse navbar-collapse justify-content-center my-8 mx-8" id="navbarNavDropdown">
       <ul class="nav ">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <RouterLink class="nav-link" to="/about">About</RouterLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Service</a>
+          <router-link class="nav-link" to="/service">Service</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Benefits</a>
+          <RouterLink class="nav-link" to="/benefits">Benefits</RouterLink>
         </li>
         <div class="justify-content-end">
         <li class="nav-item dropdown">
@@ -33,8 +33,8 @@
             More
           </a>
           <ul class="dropdown-menu ">
-            <li><a class="dropdown-item" href="#">Contact Us</a></li>
-            <li><a class="dropdown-item" href="#">Registration</a></li>
+            <li><RouterLink class="dropdown-item" to="/contact">Contact Us</RouterLink></li>
+            <li><RouterLink class="dropdown-item" to="/registration">Registration</RouterLink></li>
           </ul>
         </li>
 

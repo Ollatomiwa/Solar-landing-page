@@ -3,7 +3,7 @@
         <img class=" photo contact-left-img  col col-md-6 d-none d-lg-block justify-content-center align-content-center " :src="photoUrl" alt="" srcset="">
         <form action="https://api.web3forms.com/submits" method="post" class="contact-left">
             <div class="contact-left-title">
-                <h2>Get in touch with us</h2>
+                <h2>GET A FREE CONSULTATION</h2>
                 <hr>
             </div>
             <input type="hidden" name="access_key" value="ACCESS_KEY_HERE" class="contact-left">
@@ -55,7 +55,7 @@
     }
     .contact-left-title h2{
         font-weight: 600;
-        color: #a363aa;
+        color: #f6f2f7;
         font-size:40px;
         margin-bottom: 6px;
     }
@@ -63,7 +63,7 @@
         border: none;
         width: 120px;
         height: 5px;
-        background-color: #a363aa;
+        background-color: #a2f338;
         border-radius: 10px;
         margin-bottom: 20px;
     }

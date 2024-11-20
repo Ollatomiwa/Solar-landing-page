@@ -11,7 +11,7 @@
         <div class="text-light row justify-content-between">
             <div class="col-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300" class="img-top" alt="image description">
+                    <img src="https://via.placeholder.com/" class="img-top" alt="image description">
                     <div class="card-body">
                         <h5 class="card-title">PANELS</h5>
                         <p class="card-text">this are some related solar panels for your needs it 
@@ -20,34 +20,54 @@
                 </div>
             </div>
             <div class="col-4 text-right">
-                <h2>About Us.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio quaerat molestiae 
-                    porro mollitia aut accusamus, hic neque dignissimos quia. Odio dolor placeat et obcaecati, 
-                    minima quos nemo molestias repudiandae!</p>
+                <h2>ABOUT US.</h2>
+                <p>W exist to empower individuals and businesses to embrace solar energy.</p>
             </div>
         </div>
     </div>
     <hr>
     <div class="container-commitment">
-        <div class="text-light row justify-content-center">
-            <div class="col-6 text-center">
-                <h2>Our commitment.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio quaerat molestiae 
-                    porro mollitia aut accusamus, hic neque dignissimos quia. Odio dolor placeat et obcaecati, 
-                    minima quos nemo molestias repudiandae!</p>
+        <div class="text-light row justify-content-between">
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/" class="img-top" alt="image description">
+                    <div class="card-body">
+                        <h5 class="card-title">Commitments</h5>
+                        <p class="card-text">serving the need of the people.</p>
+                    </div>
+                </div> 
+            </div>           
+            <div class="col-4 text-right">
+                <h2> COMMITMENT.</h2>
+                <p> We envision a planet powered by the sun, where clean energy is affordable and accessible to all.
+                </p>
             </div>
+            
         </div>
+        
     </div>
+    <hr>
 
     <div class="container-commitment">
-        <div class="text-light row justify-content-center">
-            <div class="col-6 text-center">
-                <h2>Our Mission.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio quaerat molestiae 
-                    porro mollitia aut accusamus, hic neque dignissimos quia. Odio dolor placeat et obcaecati, 
-                    minima quos nemo molestias repudiandae!</p>
+        <div class="text-light row justify-content-between">
+            <div class="col-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/" class="img-top" alt="image description">
+                    <div class="card-body">
+                        <h5 class="card-title">Mission</h5>
+                        <p class="card-text">producing optimum services throughout the continent.</p>
+                    </div>
+                </div> 
+            </div>           
+            <div class="col-4 text-right">
+                <h2>OUR MISSION.</h2>
+                <p>Our mission is clear: to make the world a better place by providing innovative, reliable and eco
+                    friendly solar energy solutions.
+                </p>
             </div>
+            
         </div>
+        
     </div>
 </template>
 
@@ -60,6 +80,10 @@
         height: 10px;
         width: 40px;
         color: yellow;
+    }
+    h2 {
+        font-size:20px;
+        font-weight: 600;
     }
 
 </style>

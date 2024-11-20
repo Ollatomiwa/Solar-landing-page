@@ -10,10 +10,10 @@
             <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
             <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
             <input type="text" name="Message" placeholder="Your Message" class="contact-inputs" required>
-            <a :href="submitUrl" target="_blank" rel="noopener noreferrer">
+            
 
                 <button type="submit">Submit</button>
-            </a>
+            
         </form>
     </div>
 </template>
@@ -23,7 +23,6 @@
     import photo from '../assets/contact.png';
 
     const photoUrl = ref(photo);
-    const submitUrl = ref("https://google.com");
 </script>
 
 <style scoped>

@@ -1,6 +1,6 @@
 <template>
     <div class="contact-container">
-        <img class="contact-left-img  col col-md-6 d-none d-lg-block justify-content-center align-content-center " :src="photoUrl" alt="" srcset="">
+        <img class=" photo contact-left-img  col col-md-6 d-none d-lg-block justify-content-center align-content-center " :src="photoUrl" alt="" srcset="">
         <form action="https://api.web3forms.com/submits" method="post" class="contact-left">
             <div class="contact-left-title">
                 <h2>Get in touch with us</h2>
@@ -20,7 +20,7 @@
 
 <script setup>
     import {ref} from 'vue';
-    import photo from '../assets/logo.svg';
+    import photo from '../assets/contact.png';
 
     const photoUrl = ref(photo);
     const submitUrl = ref("https://google.com");
@@ -35,7 +35,12 @@
     body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    }
+    } 
+    .photo {
+        width: 360px;
+        height: 360px;
+        margin-right: 50px;
+    }                                                        
     .contact-container {
         height: 100vh;
         display: flex;
@@ -87,7 +92,7 @@
         display: flex;
         align-items: center;
         padding: 15px 30px;
-        font-size: 16px;
+        font-size: 26px;
         color: #fff;
         gap:10px;
         border: none;

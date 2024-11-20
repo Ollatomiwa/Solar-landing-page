@@ -4,28 +4,28 @@
 
 <template>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Solar Energy Powerr</a>
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid w-100">
+    <a class="navbar-brand text-light " href="#">Solar Energy Power</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
         aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center my-8 mx-8 link-offset-2-hover"id="navbarNavDropdown">
+    <div class="collapse navbar-collapse justify-content-center my-8 mx-8  "id="navbarNavDropdown">
       <ul class="nav ">
-        <li class="nav-item">
-          <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
+        <li class="nav-item ">
+          <router-link class="nav-link active text-light" aria-current="page" to="/">Home</router-link>
         </li>
         <li class="nav-item">
-          <RouterLink class="nav-link" to="/about">About</RouterLink>
+          <RouterLink class="nav-link text-light" to="/about">About</RouterLink>
         </li>
         <li class="nav-item ">
-          <router-link class="nav-link" to="/service">Service</router-link>
+          <router-link class="nav-link text-light" to="/service">Service</router-link>
         </li>
-        <div class="justify-content-end">
+      
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" 
           aria-expanded="false">
             More
           </a>
@@ -35,10 +35,18 @@
           </ul>
         </li>
 
-        </div>
+        
     
       </ul>
     </div>
   </div>
 </nav>
 </template>
+<style scoped>
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+</style>

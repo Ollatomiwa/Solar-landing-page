@@ -11,7 +11,7 @@
         <div class="text-light row justify-content-between">
             <div class="col-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/" class="img-top" alt="image description">
+                    <img :src="photoUrlsAbout" class="img-top" alt="image description">
                     <div class="card-body">
                         <h5 class="card-title">PANELS</h5>
                         <p class="card-text">this are some related solar panels for your needs it 
@@ -21,7 +21,7 @@
             </div>
             <div class="col-4 text-right">
                 <h2>ABOUT US.</h2>
-                <p>W exist to empower individuals and businesses to embrace solar energy.</p>
+                <p>We exist to empower individuals and businesses to embrace solar energy.</p>
             </div>
         </div>
     </div>
@@ -72,10 +72,76 @@
 </template>
 
 <script setup>
+    import {ref} from 'vue';
+    import photo1 from '../assets/img/solar.jpg';
+    import photo2 from '../assets/img/solar.jpg';
 
+    const photoUrlsAbout  = ref(photo1);
+    const photoUrlsCommitment = ref(photo2);
 </script>
 
 <style scoped>
+
+    .img-top {
+        height: 40vh;
+        max-width: 100vw;
+    }
+   /* Default styles (Desktop and larger screens) */
+.container,
+.container-commitment {
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Default alignment for larger screens */
+  align-items: flex-start;
+}
+
+.card {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Mobile Phones and Tablets */
+@media (max-width: 768px) {
+  .container,
+  .container-commitment {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text */
+  }
+
+  .row {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .col-4 {
+    flex: none; /* Disable flex for children */
+    width: 100%; /* Full width for columns */
+    max-width: 90%; /* Add some margin for spacing */
+    margin-bottom: 20px; /* Add spacing between elements */
+  }
+
+  .text-right {
+    text-align: center; /* Center align text */
+  }
+
+  .card img {
+    max-width: 100%; /* Ensure images scale properly */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+        
+    
     hr {
         height: 10px;
         width: 40px;

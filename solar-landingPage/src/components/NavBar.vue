@@ -6,7 +6,7 @@
 
 <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid w-100">
-    <a class="navbar-brand text-light " href="#">Solar Energy Power</a>
+    <a class="navbar-brand fw-bolder text-white " href="#">Solar Energy Power</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
         aria-expanded="false" aria-label="Toggle navigation">
@@ -50,12 +50,13 @@
 }
 
 .nav-link:hover{
-
-  transform:  .5s ease;
+  content: '';
+  transition:  all .3s ease;
   bottom: 0;
   left: 0;
-  border-bottom:  solid white;
   
+  border-bottom: 1px solid #93f117;
+ 
 }
 
 </style>

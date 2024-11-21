@@ -49,4 +49,13 @@
   padding-right: 0;
 }
 
+.nav-link:hover{
+
+  transform:  .5s ease;
+  bottom: 0;
+  left: 0;
+  border-bottom:  solid white;
+  
+}
+
 </style>

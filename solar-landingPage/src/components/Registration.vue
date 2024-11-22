@@ -25,7 +25,7 @@
                         </div>
                         <button class="btn" type="submit">Continue</button>
                         <div class="or">Or continue with</div>
-                        <div class="socia">
+                        <div class="social">
                             <button class="social-btn">
                                 <i class="fa-brands fa-google"></i>
                             </button>
@@ -97,7 +97,7 @@ body {
 
 h1 {
     font-size: 2em;
-    margin: 0 0 1.5em;
+    margin: 0 0 1.5rem;
     text-align: center;
 }
 
@@ -105,14 +105,15 @@ h1 {
     position: relative;
     background-color: hsl(223, 10%, 90%);
     border-radius: 0.75em;
+    display: flex;
     margin-bottom: 1.5em;
     min-height:3em;
 }
 
 .segmented-btn {
-    border-radius: 0.075em;
+    border-radius: 0.875em;
     box-shadow: 0 0 0 0.1875em var(--focus-t) inset;
-    color: hsl(223, 10%, 90%);
+    color: hsl(223, 10%, 40%);
     cursor: pointer;
     outline: transparent;
     padding: 0.75em;
@@ -138,7 +139,7 @@ h1 {
 
 .field {
     position: relative;
-    margin-bottom: 2.2em;
+    margin-bottom: 2.25em;
 }
 
 .input-textbox {
@@ -168,7 +169,7 @@ h1 {
     border-radius: 0.75em;
     box-shadow: 
     0 0 0 0.1em hsl(223deg, 10%, 90% / 0%) ,
-    0 0 0 0.1em hsl(223deg, 90%, 50% / 0%) ;
+    0 0 0 0.3em hsl(223deg, 90%, 50% / 0%) ;
     color: white;
     margin-bottom: 1.5em;
     padding: 1em;
@@ -195,6 +196,51 @@ h1 {
 }
 
 .or:before {
-    
+    margin-inline-end: 0.75em;
 } 
+.or:after {
+    margin-inline-end: 0.75em;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1,5em;
+}
+.social-btn {
+    width: 3.4em;
+    height: 3,4em;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2em hsl(223deg 90% 50% / 0%);
+    cursor: pointer;
+    outline: transparent;
+
+}
+.footer{
+    width: 100%;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    line-height: 1.3;
+    list-style: none;
+}
+
+a {
+    border-radius: 0.5em;
+    box-shadow: 0 0 0 0.2em hsl(223deg 90% 50% / 0%);
+    color: hsl(223, 90%, 50%);
+    outline: none;
+}
+
+.column--bg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+}
 </style>

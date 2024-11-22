@@ -187,7 +187,7 @@ h1 {
     margin-bottom: 1.5em;
     text-align: center;
 }
-.or::before, .or::after {
+.or:before, .or:after {
     background-color: hsl(223, 10%, 70% );
     content: "";
     display: block;
@@ -230,7 +230,7 @@ h1 {
 }
 
 a {
-    border-radius: 0.5em;
+    border-radius: 0.35em;
     box-shadow: 0 0 0 0.2em hsl(223deg 90% 50% / 0%);
     color: hsl(223, 90%, 50%);
     outline: none;

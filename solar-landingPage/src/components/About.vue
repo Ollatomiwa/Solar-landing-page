@@ -30,7 +30,7 @@
         <div class="text-light row justify-content-between">
             <div class="col-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/" class="img-top" alt="image description">
+                    <img :src="photoUrlsCommitment" class="img-top" alt="image description">
                     <div class="card-body">
                         <h5 class="card-title">Commitments</h5>
                         <p class="card-text">serving the need of the people.</p>
@@ -52,7 +52,7 @@
         <div class="text-light row justify-content-between">
             <div class="col-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/" class="img-top" alt="image description">
+                    <img :src="photoUrlsMission" class="img-top" alt="image description">
                     <div class="card-body">
                         <h5 class="card-title">Mission</h5>
                         <p class="card-text">producing optimum services throughout the continent.</p>
@@ -74,10 +74,12 @@
 <script setup>
     import {ref} from 'vue';
     import photo1 from '../assets/img/solar.jpg';
-    import photo2 from '../assets/img/solar.jpg';
+    import photo2 from '../assets/img/windmill.jpg';
+    import photo3 from '../assets/img/panel.jpg';
 
     const photoUrlsAbout  = ref(photo1);
     const photoUrlsCommitment = ref(photo2);
+    const photoUrlsMission = ref(photo3);
 </script>
 
 <style scoped>
@@ -103,7 +105,7 @@
 }
 
 .text-right {
-  text-align: right;
+  text-align: center;
 }
 
 /* Mobile Phones and Tablets */
@@ -136,7 +138,7 @@
 
   .card img {
     max-width: 100%; /* Ensure images scale properly */
-    height: auto; /* Maintain aspect ratio */
+    height: 50vh; /* Maintain aspect ratio */
   }
 }
 

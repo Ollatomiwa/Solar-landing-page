@@ -3,7 +3,7 @@ import Home from "@/components/Home.vue";
 import ContactUs from "@/components/ContactUs.vue";
 import About from "@/components/About.vue";
 import Service from "@/components/Service.vue";
-import Benefits from "@/components/Benefits.vue";
+import Battery from "@/components/Battery.vue";
 import Registration from "@/components/Registration.vue";
 
 const router = createRouter ({
@@ -28,9 +28,9 @@ const router = createRouter ({
         },
 
         {
-            path: '/benefits',
-            name: 'benefits',
-            component:Benefits
+            path: '/service/battery',
+            name: 'Battery',
+            component:Battery
         },
 
         {

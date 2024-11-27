@@ -12,7 +12,7 @@
     <div class="col-sm-6">
         <div class="card my-3">
             <div class="card-body">
-                <img :src="windmill" alt="Solar Windmill">
+                <img :src="windmill" alt="Solar Windmill" class="bg-dark">
                  <h5 class="card-title">Windmill</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <RouterLink to="#" class="btn btn-primary">Check sample</RouterLink>
@@ -45,7 +45,7 @@
                 <img :src="batterys" alt="Solar Battery">
                 <h5 class="card-title">Battery 15KV</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <RouterLink to="#" class="btn btn-primary">Check sample</RouterLink>
+                <RouterLink to="/service/battery" class="btn btn-primary">Check sample</RouterLink>
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@
                 <img :src="battery" alt="Solar Battery">
                  <h5 class="card-title">Battery 16KV</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <RouterLink to="#" class="btn btn-primary">Check sample</RouterLink>
+                <RouterLink to="/service/battery" class="btn btn-primary">Check sample</RouterLink>
             </div>
          </div>
     </div>
@@ -97,11 +97,13 @@ const batterys = ref(photoBatterys);
  .card-body img {
     max-width: 100%; /* Ensures the image does not exceed the card's width */
     max-height: 100%; /* Ensures the image does not exceed the card's height */
-    object-fit:fill; /* Maintains the aspect ratio without stretching */
+    object-fit:cover; /* Maintains the aspect ratio without stretching */
     display: block; /* Removes inline spacing issues */
     margin: 0 auto; /* Optional: Centers the image horizontally */
 }
-
-
+.card {
+    
+    border-radius: 10%;
+}
 
 </style>

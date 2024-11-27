@@ -12,60 +12,60 @@
     <div class="col-sm-6">
         <div class="card my-3">
             <div class="card-body">
-                <img src="../assets/img/wind.JPG" alt="Solar Image">
+                <img :src="windmill" alt="Solar Windmill">
                  <h5 class="card-title">Windmill</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Check sample</a>
+                <RouterLink to="#" class="btn btn-primary">Check sample</RouterLink>
             </div>
          </div>
     </div>
      <div class="col-sm-6">
         <div class="card my-3">
             <div class="card-body">
-                <img src="../assets/img/wind.JPG" alt="Solar Image">
-                <h5 class="card-title">Winmill Fan</h5>
+                <img :src="windmill" alt="Solar Windmill">
+                <h5 class="card-title">Windmill Blade</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Check samples</a>
+                <RouterLink to="#" class="btn btn-primary">Check sample</RouterLink>
             </div>
         </div>
     </div>
     <div class="col-sm-6">
         <div class="card my-3">
             <div class="card-body">
-                <img src="../assets/img/inverter.JPG" alt="Solar Image">
+                <img :src="inverter" alt="Solar Inverter">
                  <h5 class="card-title">Inverter</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Check sample</a>
+                <RouterLink to="#" class="btn btn-primary">Check sample</RouterLink>
             </div>
          </div>
     </div>
      <div class="col-sm-6">
         <div class="card my-3">
             <div class="card-body">
-                <img src="../assets/img/battery2.JPG" alt="Solar Image">
-                <h5 class="card-title">Batery 15KV</h5>
+                <img :src="batterys" alt="Solar Battery">
+                <h5 class="card-title">Battery 15KV</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Check sample</a>
+                <RouterLink to="#" class="btn btn-primary">Check sample</RouterLink>
             </div>
         </div>
     </div>
     <div class="col-sm-6">
         <div class="card my-3">
             <div class="card-body">
-                <img src="../assets/img/battery.JPG" alt="Solar Image">
-                 <h5 class="card-title">battery 16KV</h5>
+                <img :src="battery" alt="Solar Battery">
+                 <h5 class="card-title">Battery 16KV</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Check sample</a>
+                <RouterLink to="#" class="btn btn-primary">Check sample</RouterLink>
             </div>
          </div>
     </div>
      <div class="col-sm-6">
         <div class="card my-3">
         <div class="card-body">
-        <img src="../assets/img/solarpanelsrvice.JPG" alt="Solar Image">
+        <img :src="solar" alt="Solar Panel">
         <h5 class="card-title">Solar Panel</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Check sample</a>
+        <RouterLink to="#" class="btn btn-primary">Check sample</RouterLink>
     </div>
 </div>
 
@@ -73,10 +73,23 @@
     
 
 </div>
-      <!--//BLOG-->
+      <!--/SERVICE-->
 </template>
 
 <script setup>
+import {ref} from 'vue';
+
+import photoWindmill from '../assets/img/wind.jpg';
+import photoInverter from '../assets/img/inverter.jpg';
+import photoSolar from '../assets/img/solarpanelsrvice.jpg';
+import photoBattery from '../assets/img/battery.jpg';
+import photoBatterys from '../assets/img/battery2.jpg';
+
+const windmill = ref(photoWindmill);
+const inverter = ref(photoInverter);
+const solar = ref(photoSolar);
+const battery = ref(photoBattery);
+const batterys = ref(photoBatterys);
 
 </script>
 

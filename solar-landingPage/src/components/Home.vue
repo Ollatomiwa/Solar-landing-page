@@ -20,7 +20,7 @@
         </div>
         <RouterLink to="/contact" class="btn btn-warning btn-lg text-center ">GET A FREE QUOTE</RouterLink>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center my-3">
     <div class="col-sm-6">
         <div class="card my-3">
             <div class="card-body">
@@ -30,7 +30,7 @@
                         object-fit: cover; border-radius: 5%;">
                     <!-- Text Section -->
                     <div>
-                        <h5 class="card-title text-center">Windmill</h5>
+                        <h5 class="card-title text-center">SOLAR ENERGY</h5>
                         <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
                         
                     </div>

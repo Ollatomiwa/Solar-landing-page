@@ -73,9 +73,9 @@
 
 <script setup>
     import {ref} from 'vue';
-    import photo1 from '../assets/img/solar.jpg';
-    import photo2 from '../assets/img/windmill.jpg';
-    import photo3 from '../assets/img/panel.jpg';
+    import photo1 from '../assets/img/solar.JPG';
+    import photo2 from '../assets/img/windmill.JPG';
+    import photo3 from '../assets/img/panel.JPG';
 
     const photoUrlsAbout  = ref(photo1);
     const photoUrlsCommitment = ref(photo2);

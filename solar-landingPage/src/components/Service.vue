@@ -3,7 +3,7 @@
     <div class="container text-center ">
         <div class="row justify-content-md-center">
             <div class="col col-md-6 py-5  ">
-                <h2 class="text-white">LATEST PRODUCTS</h2>
+                <h2 class="text-black">LATEST PRODUCTS</h2>
                 
             </div>
         </div>

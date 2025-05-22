@@ -6,7 +6,7 @@
 <header class="py-4 border-6">
   <nav class="navbar w-full block max-w-screen-xl px-4 py-2 mx-auto bg-white bg-opacity-90  top-3 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999] navbar-expand-lg sticky-top bg-black ">
     <div class="container-fluid w-100">
-      <a class="navbar-brand fw-bolder text-black " href="#">Solar Energy Power</a>
+      <a class="navbar-brand fw-bolder text-black " href="#">SOLAR ENERGY POWER</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
           data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
           aria-expanded="false" aria-label="Toggle navigation">
@@ -21,22 +21,8 @@
             <RouterLink class="nav-link " to="/about">About</RouterLink>
           </li>
           <li class="nav-item ">
-            <router-link class="nav-link " to="/service">Service</router-link>
+            <router-link class="nav-link " to="/contact">Contact Us</router-link>
           </li>
-        
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
-            aria-expanded="false">
-              More
-            </a>
-            <ul class="dropdown-menu ">
-              <li><RouterLink class="dropdown-item" to="/contact">Contact Us</RouterLink></li>
-              <li><RouterLink class="dropdown-item" to="/registration">Registration</RouterLink></li>
-            </ul>
-          </li>
-  
-          
-      
         </ul>
       </div>
     </div>
